@@ -1,0 +1,16 @@
+.mainDiv {
+  background-color: lightgray;
+  margin-left: 60px; 
+  padding-top: 60px; 
+  min-height: 100vh; 
+  overflow-y: auto; 
+}
+
+app-top-menu {
+  position: fixed; 
+  top: 0;
+  margin-left: 30px;
+  background-color: white;
+  width: 100%;
+  // z-index: 1000; 
+}

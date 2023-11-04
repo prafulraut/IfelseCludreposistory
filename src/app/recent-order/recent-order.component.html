@@ -1,0 +1,46 @@
+<div class="row mt-4">
+    <div class="ml-4"></div>
+    <div class="col-lg-7 bg-white">
+        <h6 class="mt-4">Recent Order</h6>
+        <table class="table table-hover mt-4">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Products</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Tracking No#</th>
+                    <th>Shipping</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of apiData.recent_orders.slice(0,5); let i = index">
+                    <td>0{{i+1}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.product}}</td>
+                    <td>{{data.delivery_date}}</td>
+                    <td>
+                        <button [ngClass]="getStatusColur(data.status)">
+                            {{data.status}}
+                        </button>
+                    </td>
+                    <td>{{data.tracking_no}}</td>
+                    <td><span *ngIf="data.shipping; else noShipping">
+                            Yes
+                        </span>
+                        <ng-template #noShipping>No</ng-template>
+                    </td>
+                    <td><i class="fa fa-times"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="ml-4 "></div>
+    <div class="col-lg-4 bg-white">
+        <app-new-user></app-new-user>
+
+    </div>
+
+</div>

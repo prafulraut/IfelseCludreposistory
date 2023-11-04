@@ -1,0 +1,33 @@
+.progress {
+    height: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #007bff;
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+  }
+  .green-button{
+    background-color: green;
+  }
+  .grey-button{
+    background-color: grey;
+  }
+  .red-button{
+    background-color: red;
+  }
+  .default-button{
+    background-color: black;
+  }

@@ -1,0 +1,12 @@
+<div class="cardAll card-deck">
+    <div class="card " id="cardHover" *ngFor="let data of apiData.top_cards">
+        
+        <div class="card-body">
+            <span class="card-text" id="cardValue">{{data.value}}% </span>
+            <br>
+            <span class="card-title" id="cardHeader">{{data.header}}</span>
+            <br>
+            <span class="card-text">{{data.sub_header}}</span>
+        </div>
+    </div>
+</div>

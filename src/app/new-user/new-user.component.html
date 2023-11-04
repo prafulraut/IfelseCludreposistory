@@ -1,0 +1,22 @@
+<div>
+    <h6 class="mt-4">New User Registration</h6>
+    <table class="mt-4">
+        <tr *ngFor="let user of apiData.new_users.slice(0,5)">
+            <td>
+                <img [src]="user.picture" alt="" height="80" width="70">
+            </td>
+            <td>
+                {{user.name}} <br>
+                {{user.country}}
+            </td>
+            <td>
+                 <span> <progress class="progress" max="50" [value]="user.progress "></progress>
+                  {{user.progress}}</span>
+            </td>
+            <td>
+                <button type="submit" class="btn btn-outline-primary">More</button>
+            </td>
+
+        </tr>
+    </table>
+</div>
